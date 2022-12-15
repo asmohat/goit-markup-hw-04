@@ -28,11 +28,11 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
-
+    padding: 0 15px;
 }
 
 .section {
-    padding: 94px 15px;
+    padding: 94px 0;
 }
 
 .header-content {
@@ -134,11 +134,10 @@ body {
      url('../images/background (1).jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;    
 }
 
 .main-effect .container {
-    min-height: 600px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -147,8 +146,9 @@ body {
 
 }
 
-.main-effect .section {
+.main .main-effect {
     padding: 200px 0;
+    min-height: 600px;
 }
 
 .main-effect-title {
@@ -250,10 +250,6 @@ body {
 .team {
     width: 100%;
     background-color: #f5f4fa;
-}
-
-.team .section {
-    padding-top: 0;
 }
 
 .team-headline {
