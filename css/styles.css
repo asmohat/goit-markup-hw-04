@@ -37,7 +37,8 @@ body {
 
 .header-content {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    align-content: center;
     justify-content: flex-start;
 }
 
@@ -89,6 +90,8 @@ body {
 .contacts {
     display: flex;
     margin-left: auto;
+    align-items: center;
+    align-content: center;
 }
 
 .tel {
@@ -99,7 +102,13 @@ body {
     letter-spacing: 0.02em;
     color: var(--article-color);
     text-decoration: none;
-    margin-right: 50px;
+}
+
+.tel-icon {
+    width: 12px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 .mail {
@@ -110,6 +119,14 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--article-color);
+    margin-right: 50px;
+}
+
+.mail-icon {
+    width: 16px;
+    height: 10px;
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 .mail:hover, .mail:focus {
@@ -189,6 +206,42 @@ body {
     width: 270px;    
 }
 
+.qualities-list-item::before {
+    display: inline-flex;
+    content: '';
+    width: 100%;
+    height: 120px;
+    background-color: #f5f4fa;
+}
+
+.group::before {
+    background-image: url(../images/SVG/group.svg);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clock::before {
+    background-image: url(../images/SVG/clock.svg);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.diagram::before {
+    background-image: url(../images/SVG/diagram.svg);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.astronaut::before {
+    background-image: url(../images/SVG/astronaut.svg);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .qualities-list .qualities-list-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -202,6 +255,7 @@ body {
     letter-spacing: 0.03em;
     display: inline-block;
     margin-bottom: 10px;
+    margin-top: 20px;
     text-transform: uppercase;
 }
 
@@ -327,9 +381,7 @@ body {
     width: 168px;
     height: 92px;
     border: 1px solid black;
-
 }
-
 
 /* футер */
 .page-footer {
