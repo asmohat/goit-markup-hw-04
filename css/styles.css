@@ -411,10 +411,32 @@ body {
 }
 
 .clients-list-item {
-    width: 168px;
-    height: 92px;
-    border: 1px solid black;
+    display: flex;
+
 }
+
+.clients-list-item-link {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 3px;
+}
+
+.clients-logo { 
+    fill: #AFB1B8;
+}
+
+.clients-list-item-link:hover svg {
+    fill: var(--brand-color);
+}
+
+.clients-list-item-link:hover {
+    border: 1px solid var(--brand-color);
+}
+
 
 /* футер */
 .page-footer {
