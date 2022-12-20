@@ -440,6 +440,7 @@ body {
 
 /* футер */
 .page-footer {
+    display: flex;
     background-color: #2f303a;
     width: 100%;
     min-height: 250px;
@@ -447,6 +448,10 @@ body {
 
 .page-footer .container {
     padding: 60px 15px;
+    display: flex;
+}
+
+.page-footer-contacts {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -484,6 +489,55 @@ body {
 .footer-tel, .footer-mail {
     color: rgba(255, 255, 255, 0.6);
     margin-right: 0;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.footer-socials-headline {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.footer-social-list {
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footer-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-social-link:hover svg {
+    fill: #ffffff;
+}
+
+.footer-social-link:hover {
+    background-color: var(--brand-color);
+}
+
+
+.footer-social-icon {
+    fill: #ffffff;
 }
 
 
