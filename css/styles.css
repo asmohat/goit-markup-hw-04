@@ -215,7 +215,7 @@ body {
 }
 
 .group::before {
-    background-image: url(../images/SVG/group.svg);
+    background-image: url(../images/SVG/Group.svg);
     background-size: 70px;
     background-repeat: no-repeat;
     background-position: center;
